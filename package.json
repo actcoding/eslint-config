@@ -1,8 +1,16 @@
 {
     "name": "@actcoding/eslint-config",
     "description": "Shared eslint config.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "MIT",
+    "homepage": "https://github.com/actcoding/eslint-config?tab=readme-ov-file#readme",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/actcoding/eslint-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/actcoding/eslint-config/issues"
+    },
     "type": "module",
     "module": "./index.js",
     "types": "./index.d.ts",

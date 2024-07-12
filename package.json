@@ -1,7 +1,7 @@
 {
     "name": "@actcoding/eslint-config",
     "description": "Shared eslint config.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "license": "MIT",
     "homepage": "https://github.com/actcoding/eslint-config?tab=readme-ov-file#readme",
     "repository": {
@@ -17,7 +17,8 @@
     "module": "./index.js",
     "types": "./index.d.ts",
     "scripts": {
-        "prepublish": "tsc"
+        "prepublish": "tsc",
+        "start": "eslint-config-inspector"
     },
     "files": [
         "./index.js",
@@ -30,6 +31,7 @@
     },
     "dependencies": {
         "@stylistic/eslint-plugin": "^2.3.0",
+        "@typescript-eslint/eslint-plugin": "^7.16.0",
         "@typescript-eslint/parser": "^7.16.0",
         "eslint-plugin-import-newlines": "^1.4.0"
     },

@@ -1,5 +1,6 @@
 import parserTs from '@typescript-eslint/parser'
-import stylistic from '@stylistic/eslint-plugin'
+import pluginTs from '@typescript-eslint/eslint-plugin'
+import pluginStylistic from '@stylistic/eslint-plugin'
 import pluginNewlines from 'eslint-plugin-import-newlines'
 
 /** @type import('eslint').Linter.FlatConfig[] */
@@ -12,7 +13,7 @@ const config = [
     },
     {
         plugins: {
-            '@stylistic': stylistic,
+            '@stylistic': pluginStylistic,
             '@import-newlines': pluginNewlines,
         },
         rules: {
@@ -33,12 +34,6 @@ const config = [
                 'never'
             ],
             '@stylistic/no-case-declarations': 'off',
-            '@stylistic/no-unused-vars': [
-                'error',
-                {
-                    'varsIgnorePattern': '^_.*'
-                }
-            ],
 
             '@import-newlines/enforce': [
                 'error',
@@ -58,6 +53,17 @@ const config = [
         languageOptions: {
             parser: parserTs
         },
+        plugins: {
+            '@ts': pluginTs,
+        },
+        rules: {
+            '@ts/no-unused-vars': [
+                'error',
+                {
+                    'varsIgnorePattern': '^_.*'
+                }
+            ],
+        }
     }
 ]
 

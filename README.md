@@ -1,6 +1,8 @@
 # @actcoding/eslint-config
 
-An opinionated eslint flat config.
+> An opinionated eslint flat config.
+
+This package provides multiple, opinionated eslint configs we use in our projects.
 
 ## Install
 
@@ -13,11 +15,11 @@ npm install -D @actcoding/eslint-config
 `eslint.config.js`
 
 ```js
-import eslintConfigAct from '@actcoding/eslint-config'
+import { configActDefault } from '@actcoding/eslint-config'
 
 /** @type import('eslint').Linter.FlatConfig[] */
 const config = [
-    ...eslintConfigAct,
+    ...configActDefault,
     {
         ignores: [
             '*.d.ts',

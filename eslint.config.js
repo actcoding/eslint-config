@@ -1,8 +1,8 @@
-import eslintConfigAct from './index.js'
+import { configActDefault } from './lib/index.js'
 
 /** @type import('eslint').Linter.FlatConfig[] */
 const config = [
-    ...eslintConfigAct,
+    ...configActDefault,
     {
         ignores: [
             '*.d.ts',

@@ -1,7 +1,7 @@
 {
     "name": "@actcoding/eslint-config",
     "description": "Shared eslint config.",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "license": "MIT",
     "homepage": "https://github.com/actcoding/eslint-config?tab=readme-ov-file#readme",
     "repository": {
@@ -17,7 +17,7 @@
     "types": "./dist/index.d.ts",
     "scripts": {
         "prepublish": "rm -rf dist && tsc",
-        "start": "eslint-config-inspector"
+        "start": "eslint-config-inspector --config all.js"
     },
     "files": [
         "./lib/",
@@ -35,7 +35,8 @@
         "eslint-plugin-react": "^7.34.4",
         "eslint-plugin-react-hooks": "^4.6.2",
         "eslint-plugin-react-refresh": "^0.4.8",
-        "eslint-plugin-tailwindcss": "^3.17.4"
+        "eslint-plugin-tailwindcss": "^3.17.4",
+        "map-obj": "^5.0.2"
     },
     "peerDependencies": {
         "eslint": ">= 9"

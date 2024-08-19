@@ -34,7 +34,7 @@
         "@typescript-eslint/parser": "^7.16.0",
         "eslint-plugin-import-newlines": "^1.4.0",
         "eslint-plugin-react": "^7.34.4",
-        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-hooks": "^5.1.0-rc-1eaccd82-20240816",
         "eslint-plugin-react-refresh": "^0.4.8",
         "eslint-plugin-tailwindcss": "^3.17.4",
         "map-obj": "^5.0.2"

@@ -1,7 +1,7 @@
 {
     "name": "@actcoding/eslint-config",
     "description": "Shared eslint config.",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "license": "MIT",
     "homepage": "https://github.com/actcoding/eslint-config?tab=readme-ov-file#readme",
     "repository": {
@@ -28,7 +28,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@next/eslint-plugin-next": "^14.2.5",
+        "@next/eslint-plugin-next": "^15.0.0-rc.0",
         "@stylistic/eslint-plugin": "^2.3.0",
         "@typescript-eslint/eslint-plugin": "^7.16.0",
         "@typescript-eslint/parser": "^7.16.0",
@@ -40,12 +40,12 @@
         "map-obj": "^5.0.2"
     },
     "peerDependencies": {
+        "@types/eslint": ">= 9",
         "eslint": ">= 9"
     },
     "devDependencies": {
         "@eslint/config-inspector": "^0.5.1",
         "@types/bun": "latest",
-        "@types/eslint": "^8.56.10",
         "typescript": "^5.0.0"
     }
 }

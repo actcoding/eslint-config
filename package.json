@@ -46,6 +46,6 @@
     "devDependencies": {
         "@eslint/config-inspector": "^0.5.1",
         "@types/bun": "latest",
-        "typescript": "^5.0.0"
+        "@types/eslint-plugin-tailwindcss": "^3.17.0"
     }
 }

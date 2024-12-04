@@ -1,7 +1,7 @@
 import pluginNext from '@next/eslint-plugin-next'
+import type { Linter } from 'eslint'
 
-/** @type import('eslint').Linter.Config[] */
-const configActNext = [
+const configActNext: Linter.Config[] = [
     {
         name: 'act/next',
         plugins: {

@@ -1,21 +1,20 @@
-import parserTs from '@typescript-eslint/parser'
-import pluginTs from '@typescript-eslint/eslint-plugin'
+import pluginNewlines from '@actcoding/eslint-plugin-import-newlines'
 import pluginStylistic from '@stylistic/eslint-plugin'
-import pluginNewlines from 'eslint-plugin-import-newlines'
+import pluginTs from '@typescript-eslint/eslint-plugin'
+import parserTs from '@typescript-eslint/parser'
+import type { ESLint, Linter } from 'eslint'
 
-/** @type import('eslint').Linter.Config[] */
-const configActDefault = [
+const configActDefault: Linter.Config[] = [
     {
         name: 'act/defaults/ignores',
         ignores: [
-            'dist/**/*',
-            'node_modules/**/*',
+            '**/dist/',
         ],
     },
     {
         name: 'act/defaults/style',
         plugins: {
-            '@stylistic': pluginStylistic,
+            '@stylistic': pluginStylistic as ESLint.Plugin,
             '@import-newlines': pluginNewlines,
         },
         rules: {
@@ -41,10 +40,8 @@ const configActDefault = [
             '@import-newlines/enforce': [
                 'error',
                 {
-                    'items': 4,
-                    'max-len': 120,
-                    'semi': false,
-                    'allowBlankLines': true,
+                    'maxItems': 4,
+                    'maxLineLength': 120,
                 },
             ],
         },
@@ -58,7 +55,7 @@ const configActDefault = [
             parser: parserTs,
         },
         plugins: {
-            '@ts': pluginTs,
+            '@ts': pluginTs as unknown as ESLint.Plugin,
         },
         rules: {
             '@ts/no-unused-vars': [

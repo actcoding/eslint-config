@@ -1,6 +1,6 @@
-import { configActDefault } from './lib/index.js'
+import { configActDefault } from '@actcoding/eslint-config'
 
-/** @type import('eslint').Linter.FlatConfig[] */
+/** @type {import('eslint').Linter.Config[]} */
 const config = [
     ...configActDefault,
 ]

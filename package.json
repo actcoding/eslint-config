@@ -1,51 +1,17 @@
 {
-    "name": "@actcoding/eslint-config",
-    "description": "Shared eslint config.",
-    "version": "0.0.9",
-    "license": "MIT",
-    "homepage": "https://github.com/actcoding/eslint-config?tab=readme-ov-file#readme",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/actcoding/eslint-config.git"
-    },
-    "bugs": {
-        "url": "https://github.com/actcoding/eslint-config/issues"
-    },
+    "private": true,
+    "name": "workspace",
+    "version": "0.0.0",
+    "packageManager": "bun@1.1.38",
     "type": "module",
-    "main": "./lib/index.js",
-    "module": "./lib/index.js",
-    "types": "./dist/index.d.ts",
-    "scripts": {
-        "prepublish": "rm -rf dist && tsc",
-        "start": "eslint-config-inspector --config all.js"
-    },
-    "files": [
-        "./lib/",
-        "./dist/"
+    "workspaces": [
+        "packages/*"
     ],
-    "private": false,
-    "publishConfig": {
-        "access": "public"
-    },
-    "dependencies": {
-        "@next/eslint-plugin-next": "^15.0.3",
-        "@stylistic/eslint-plugin": "^2.11.0",
-        "@typescript-eslint/eslint-plugin": "^8.17.0",
-        "@typescript-eslint/parser": "^8.17.0",
-        "eslint-plugin-import-newlines": "^1.4.0",
-        "eslint-plugin-react": "^7.34.4",
-        "eslint-plugin-react-hooks": "^5.1.0-rc.1",
-        "eslint-plugin-react-refresh": "^0.4.8",
-        "eslint-plugin-tailwindcss": "^3.17.4",
-        "map-obj": "^5.0.2"
-    },
-    "peerDependencies": {
-        "eslint": ">= 9"
-    },
     "devDependencies": {
         "@eslint/config-inspector": "^0.5.1",
         "@types/bun": "latest",
         "@types/eslint": "^9.6.1",
-        "@types/eslint-plugin-tailwindcss": "^3.17.0"
+        "turbo": "^2.3.3",
+        "typescript": "^5.7.2"
     }
 }

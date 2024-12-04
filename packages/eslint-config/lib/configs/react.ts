@@ -1,10 +1,10 @@
+import type { Linter } from 'eslint'
 import pluginReact from 'eslint-plugin-react'
 import pluginHooks from 'eslint-plugin-react-hooks'
 import pluginRefresh from 'eslint-plugin-react-refresh'
 import { prefixKey } from '../utils/map-obj.js'
 
-/** @type import('eslint').Linter.Config[] */
-const configActReact = [
+const configActReact: Linter.Config[] = [
     {
         name: 'act/react',
         plugins: {

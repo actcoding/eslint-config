@@ -1,12 +1,19 @@
+import type { ESLint, Linter } from 'eslint'
 import pluginTailwind from 'eslint-plugin-tailwindcss'
 import { prefixKey } from '../utils/map-obj.js'
 
-/** @type import('eslint').Linter.Config[] */
-const configActTailwind = [
+const configActTailwind: Linter.Config[] = [
     {
         name: 'act/tailwind',
         plugins: {
-            '@tailwindcss': pluginTailwind,
+            '@tailwindcss': pluginTailwind as ESLint.Plugin,
+        },
+        languageOptions: {
+            parserOptions: {
+                ecmaFeatures: {
+                    jsx: true,
+                },
+            },
         },
         rules: {
             ...prefixKey(pluginTailwind.configs['recommended'].rules, '@'),

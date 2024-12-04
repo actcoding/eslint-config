@@ -1,0 +1,40 @@
+{
+    "name": "@actcoding/eslint-plugin-import-newlines",
+    "description": "ESLint plugin for enforcing newlines in ES6 import statements past a certain number of items.",
+    "version": "0.1.0",
+    "license": "MIT",
+    "homepage": "https://github.com/actcoding/eslint-config?tab=readme-ov-file#readme",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/actcoding/eslint-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/actcoding/eslint-config/issues"
+    },
+    "type": "module",
+    "exports": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "prepublish": "bun run build",
+        "clean": "rm -rf dist",
+        "build": "tsc",
+        "dev": "tsc -w"
+    },
+    "files": [
+        "./dist/"
+    ],
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "zod": "^3.23.8"
+    },
+    "peerDependencies": {
+        "eslint": ">= 9"
+    },
+    "devDependencies": {
+        "@types/estree": "^1.0.6",
+        "@types/json-schema": "^7.0.15"
+    }
+}

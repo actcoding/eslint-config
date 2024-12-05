@@ -17,7 +17,7 @@ npm install -D @actcoding/eslint-config
 ```js
 import { configActDefault } from '@actcoding/eslint-config'
 
-/** @type import('eslint').Linter.Config[] */
+/** @type {import('eslint').Linter.Config[]} */
 const config = [
     ...configActDefault,
     {

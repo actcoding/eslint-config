@@ -1,3 +1,6 @@
+![NPM Version](https://img.shields.io/npm/v/%40actcoding%2Feslint-plugin-import-newlines)
+![NPM Last Update](https://img.shields.io/npm/last-update/%40actcoding%2Feslint-plugin-import-newlines)
+
 # @actcoding/eslint-plugin-import-newlines
 
 > ESLint plugin for enforcing newlines in ES6 import statements past a certain number of items.

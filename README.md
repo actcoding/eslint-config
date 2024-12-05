@@ -1,3 +1,6 @@
+[![CI](https://github.com/actcoding/eslint-config/actions/workflows/ci.yml/badge.svg)](https://github.com/actcoding/eslint-config/actions/workflows/ci.yml)
+[![Release](https://github.com/actcoding/eslint-config/actions/workflows/release.yml/badge.svg)](https://github.com/actcoding/eslint-config/actions/workflows/release.yml)
+
 # eslint-config
 
 > A set of opinionated eslint configs and plugins we use in most of our projects.

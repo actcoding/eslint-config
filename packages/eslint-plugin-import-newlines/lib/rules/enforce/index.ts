@@ -28,7 +28,7 @@ const plugin: Rule.RuleModule = {
     meta: {
         type: 'layout',
         docs: {
-            description: 'enforce multiple lines for import statements past a certain number of items',
+            description: 'Enforce multiple lines for import statements past a certain number of items',
             category: 'Stylistic Issues',
             url: 'https://github.com/actcoding/eslint-config',
         },

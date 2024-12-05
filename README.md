@@ -1,35 +1,12 @@
-# @actcoding/eslint-config
+# eslint-config
 
-> An opinionated eslint flat config.
+> A set of opinionated eslint configs and plugins we use in most of our projects.
 
-This package provides multiple, opinionated eslint configs we use in our projects.
+## Projects
 
-## Install
-
-```shell
-npm install -D @actcoding/eslint-config
-```
-
-## Usage
-
-`eslint.config.js`
-
-```js
-import { configActDefault } from '@actcoding/eslint-config'
-
-/** @type {import('eslint').Linter.Config[]} */
-const config = [
-    ...configActDefault,
-    {
-        ignores: [
-            '*.d.ts',
-        ]
-    }
-]
-
-export default config
-```
+- [`eslint-config`](./packages/eslint-config/README.md): The main shareable ESLint config
+- [`eslint-plugin-import-newlines`](./packages/eslint-plugin-import-newlines/README.md): A customized, typed and updated version of [SeinopSys/eslint-plugin-import-newlines](https://github.com/SeinopSys/eslint-plugin-import-newlines)
 
 ## License
 
-[MIT](LICENSE)
+All packages are published under the [MIT license](LICENSE)

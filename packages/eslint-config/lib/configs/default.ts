@@ -1,4 +1,4 @@
-import pluginNewlines from '@actcoding/eslint-plugin-import-newlines'
+import importNewlinesPlugin from '@actcoding/eslint-plugin-import-newlines'
 import pluginStylistic from '@stylistic/eslint-plugin'
 import pluginTs from '@typescript-eslint/eslint-plugin'
 import parserTs from '@typescript-eslint/parser'
@@ -15,7 +15,6 @@ const configActDefault: Linter.Config[] = [
         name: 'act/defaults/style',
         plugins: {
             '@stylistic': pluginStylistic as ESLint.Plugin,
-            '@import-newlines': pluginNewlines,
         },
         rules: {
             '@stylistic/indent': [
@@ -36,16 +35,9 @@ const configActDefault: Linter.Config[] = [
             ],
             '@stylistic/no-case-declarations': 'off',
             '@stylistic/comma-dangle': ['error', 'always-multiline'],
-
-            '@import-newlines/enforce': [
-                'error',
-                {
-                    'maxItems': 4,
-                    'maxLineLength': 120,
-                },
-            ],
         },
     },
+    importNewlinesPlugin.configs.recommended,
     {
         name: 'act/defaults/typescript',
         files: [

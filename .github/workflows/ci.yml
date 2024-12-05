@@ -18,21 +18,16 @@ jobs:
         with:
           bun-version: latest
 
-      - uses: actions/cache/restore@v4
-        id: cache
+      - uses: actions/cache@v4
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ hashFiles('bun.lockb') }}
 
-      - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
+      - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - uses: actions/cache/save@v4
-        if: steps.cache.outputs.cache-hit != 'true'
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-${{ hashFiles('bun.lockb') }}
+      - name: Build
+        run: bunx turbo build
 
       - name: Lint
         run: bunx eslint

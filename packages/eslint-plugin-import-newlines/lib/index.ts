@@ -1,15 +1,18 @@
 import type { ESLint } from 'eslint'
 import ruleEnforce from './rules/enforce/index.js'
 
-const plugin: ESLint.Plugin = {
+const importNewlinesPlugin = {
     rules: {
         enforce: ruleEnforce,
     },
 
     configs: {
         recommended: {
+            name: 'act/import-newlines',
             plugins: {
-                // '@import-newlines': plugin,
+                get '@import-newlines'(): ESLint.Plugin {
+                    return importNewlinesPlugin
+                },
             },
             rules: {
                 '@import-newlines/enforce': [
@@ -22,6 +25,6 @@ const plugin: ESLint.Plugin = {
             },
         },
     },
-}
+} satisfies ESLint.Plugin
 
-export default plugin
+export default importNewlinesPlugin

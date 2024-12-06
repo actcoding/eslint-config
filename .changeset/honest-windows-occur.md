@@ -1,5 +1,4 @@
 ---
-"@actcoding/eslint-plugin-import-newlines": minor
 "@actcoding/eslint-config": patch
 ---
 

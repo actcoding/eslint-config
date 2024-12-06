@@ -31,3 +31,41 @@ jobs:
 
       - name: Lint
         run: bunx eslint
+
+  changesets:
+    name: Process Changesets
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    concurrency: ${{ github.workflow }}-${{ github.ref }}
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ hashFiles('bun.lockb') }}
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Login to npm
+        run: |
+          printf '%s\n\n%s\n' "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" "`cat .npmrc`" > .npmrc
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          # This expects you to have a script called release which does a build for your packages and calls changeset publish
+          publish: bun run release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

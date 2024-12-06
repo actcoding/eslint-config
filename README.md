@@ -5,7 +5,7 @@
 
 > A set of opinionated eslint configs and plugins we use in most of our projects.
 
-## Projects
+## Packages
 
 - [`eslint-config`](./packages/eslint-config/README.md): The main shareable ESLint config
 - [`eslint-plugin-import-newlines`](./packages/eslint-plugin-import-newlines/README.md): A customized, typed and updated version of [SeinopSys/eslint-plugin-import-newlines](https://github.com/SeinopSys/eslint-plugin-import-newlines)

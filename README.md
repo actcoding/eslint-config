@@ -1,5 +1,4 @@
 [![CI](https://github.com/actcoding/eslint-config/actions/workflows/ci.yml/badge.svg)](https://github.com/actcoding/eslint-config/actions/workflows/ci.yml)
-[![Release](https://github.com/actcoding/eslint-config/actions/workflows/release.yml/badge.svg)](https://github.com/actcoding/eslint-config/actions/workflows/release.yml)
 
 # eslint-config
 

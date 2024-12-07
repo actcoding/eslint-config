@@ -7,6 +7,25 @@
 
 Parts of the code are taken from [SeinopSys/eslint-plugin-import-newlines](https://github.com/SeinopSys/eslint-plugin-import-newlines), which is also [MIT licensed](https://github.com/SeinopSys/eslint-plugin-import-newlines/blob/main/LICENSE.md).
 
+Turns this:
+
+```js
+import { AlertDialog, AlertDialogCancel, AlertDialogContent, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from './ui/alert-dialog'
+```
+
+into this:
+
+```js
+import {
+	AlertDialog,
+	AlertDialogCancel,
+	AlertDialogContent,
+	AlertDialogFooter,
+	AlertDialogHeader,
+	AlertDialogTitle
+} from './ui/alert-dialog'
+```
+
 ## Install
 
 ```shell

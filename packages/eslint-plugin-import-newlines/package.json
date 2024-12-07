@@ -1,7 +1,7 @@
 {
     "name": "@actcoding/eslint-plugin-import-newlines",
     "description": "ESLint plugin for enforcing newlines in ES6 import statements past a certain number of items.",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "license": "MIT",
     "homepage": "https://github.com/actcoding/eslint-config?tab=readme-ov-file#readme",
     "repository": {

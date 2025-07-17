@@ -12,8 +12,28 @@
         "url": "https://github.com/actcoding/eslint-config/issues"
     },
     "type": "module",
-    "exports": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "default": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./default": {
+            "default": "./dist/configs/default.js",
+            "types": "./dist/configs/default.d.ts"
+        },
+        "./next": {
+            "default": "./dist/configs/next.js",
+            "types": "./dist/configs/next.d.ts"
+        },
+        "./react": {
+            "default": "./dist/configs/react.js",
+            "types": "./dist/configs/react.d.ts"
+        },
+        "./tailwind": {
+            "default": "./dist/configs/tailwind.js",
+            "types": "./dist/configs/tailwind.d.ts"
+        }
+    },
     "scripts": {
         "clean": "rm -rf dist",
         "build": "tsc",

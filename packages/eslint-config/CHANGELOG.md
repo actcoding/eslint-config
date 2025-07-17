@@ -1,5 +1,13 @@
 # @actcoding/eslint-config
 
+## 0.0.10
+
+### Patch Changes
+
+- 001ccc1: updated config structure
+- Updated dependencies [001ccc1]
+  - @actcoding/eslint-plugin-import-newlines@0.1.1
+
 ## 0.0.9
 
 ### Patch Changes

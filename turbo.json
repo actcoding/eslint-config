@@ -11,6 +11,9 @@
                 "dist/**"
             ]
         },
+        "publish": {
+            "cache": false
+        },
         "dev": {
             "persistent": true
         },

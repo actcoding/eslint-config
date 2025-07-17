@@ -3,6 +3,7 @@ import pluginStylistic from '@stylistic/eslint-plugin'
 import pluginTs from '@typescript-eslint/eslint-plugin'
 import parserTs from '@typescript-eslint/parser'
 import type { ESLint, Linter } from 'eslint'
+import pluginImport from 'eslint-plugin-import'
 
 const configActDefault: Linter.Config[] = [
     {
@@ -35,6 +36,20 @@ const configActDefault: Linter.Config[] = [
             ],
             '@stylistic/no-case-declarations': 'off',
             '@stylistic/comma-dangle': ['error', 'always-multiline'],
+            '@stylistic/no-multiple-empty-lines': [
+                'error',
+                { max: 1 },
+            ],
+            '@stylistic/object-curly-spacing': ['error', 'always'],
+        },
+    },
+    {
+        name: 'act/defaults/import',
+        plugins: {
+            '@import': pluginImport as ESLint.Plugin,
+        },
+        rules: {
+            '@import/order': 'error',
         },
     },
     importNewlinesPlugin.configs.recommended,

@@ -4,7 +4,7 @@ import { prefixKey } from '../utils/map-obj.js'
 
 const configActTailwind: Linter.Config[] = [
     {
-        name: 'act/tailwind',
+        name: 'act/style/tailwind',
         plugins: {
             '@tailwindcss': pluginTailwind as ESLint.Plugin,
         },

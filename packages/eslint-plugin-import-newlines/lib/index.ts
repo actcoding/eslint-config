@@ -8,7 +8,7 @@ const importNewlinesPlugin = {
 
     configs: {
         recommended: {
-            name: 'act/import-newlines',
+            name: 'act/defaults/import-newlines',
             plugins: {
                 get '@import-newlines'(): ESLint.Plugin {
                     return importNewlinesPlugin

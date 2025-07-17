@@ -15,11 +15,11 @@
     "exports": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "scripts": {
-        "prepublish": "bun run build",
         "clean": "rm -rf dist",
         "build": "tsc",
         "dev": "tsc -w",
-        "start": "eslint-config-inspector --config all.js"
+        "start": "eslint-config-inspector --config all.js",
+        "publish": "bun publish"
     },
     "files": [
         "./dist/"
@@ -30,15 +30,16 @@
     },
     "dependencies": {
         "@actcoding/eslint-plugin-import-newlines": "workspace:*",
-        "@next/eslint-plugin-next": "^15.0.3",
-        "@stylistic/eslint-plugin": "^2.11.0",
-        "@typescript-eslint/eslint-plugin": "^8.17.0",
-        "@typescript-eslint/parser": "^8.17.0",
+        "@next/eslint-plugin-next": "^15.4.1",
+        "@stylistic/eslint-plugin": "^5.2.0",
+        "@typescript-eslint/eslint-plugin": "^8.37.0",
+        "@typescript-eslint/parser": "^8.37.0",
+        "eslint-plugin-import": "^2.32.0",
         "eslint-plugin-import-newlines": "^1.4.0",
-        "eslint-plugin-react": "^7.34.4",
-        "eslint-plugin-react-hooks": "^5.1.0-rc.1",
-        "eslint-plugin-react-refresh": "^0.4.8",
-        "eslint-plugin-tailwindcss": "^3.17.4",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^5.2.0",
+        "eslint-plugin-react-refresh": "^0.4.20",
+        "eslint-plugin-tailwindcss": "^3.18.2",
         "map-obj": "^5.0.2"
     },
     "peerDependencies": {

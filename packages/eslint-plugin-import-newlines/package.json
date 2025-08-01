@@ -28,7 +28,7 @@
         "access": "public"
     },
     "dependencies": {
-        "zod": "^3.25.76"
+        "zod": "^4.0.14"
     },
     "peerDependencies": {
         "eslint": ">= 9"

@@ -60,7 +60,7 @@
         "eslint-plugin-react-hooks": "^5.2.0",
         "eslint-plugin-react-refresh": "^0.4.20",
         "eslint-plugin-tailwindcss": "^3.18.2",
-        "map-obj": "^5.0.2"
+        "map-obj": "^6.0.0"
     },
     "peerDependencies": {
         "eslint": ">= 9"

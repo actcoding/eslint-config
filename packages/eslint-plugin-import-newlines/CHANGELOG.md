@@ -1,5 +1,11 @@
 # @actcoding/eslint-plugin-import-newlines
 
+## 0.1.2
+
+### Patch Changes
+
+- 0cd0ecb: update dependencies
+
 ## 0.1.1
 
 ### Patch Changes

@@ -42,7 +42,9 @@
         "publish": "bun publish"
     },
     "files": [
-        "./dist/"
+        "./dist/",
+        "!**/*.map",
+        "!**/tsconfig.tsbuildinfo"
     ],
     "private": false,
     "publishConfig": {

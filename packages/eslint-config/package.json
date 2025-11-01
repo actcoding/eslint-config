@@ -50,17 +50,17 @@
     },
     "dependencies": {
         "@actcoding/eslint-plugin-import-newlines": "workspace:*",
-        "@next/eslint-plugin-next": "^15.4.1",
-        "@stylistic/eslint-plugin": "^5.2.0",
-        "@typescript-eslint/eslint-plugin": "^8.37.0",
-        "@typescript-eslint/parser": "^8.37.0",
+        "@next/eslint-plugin-next": "^16.0.1",
+        "@stylistic/eslint-plugin": "^5.5.0",
+        "@typescript-eslint/eslint-plugin": "^8.46.2",
+        "@typescript-eslint/parser": "^8.46.2",
         "eslint-plugin-import": "^2.32.0",
         "eslint-plugin-import-newlines": "^1.4.0",
         "eslint-plugin-react": "^7.37.5",
-        "eslint-plugin-react-hooks": "^5.2.0",
-        "eslint-plugin-react-refresh": "^0.4.20",
+        "eslint-plugin-react-hooks": "^7.0.1",
+        "eslint-plugin-react-refresh": "^0.4.24",
         "eslint-plugin-tailwindcss": "^3.18.2",
-        "map-obj": "^5.0.2"
+        "map-obj": "^6.0.0"
     },
     "peerDependencies": {
         "eslint": ">= 9"

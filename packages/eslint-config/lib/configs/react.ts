@@ -37,7 +37,7 @@ const configActReact: Linter.Config[] = [
     {
         name: 'act/react/hooks',
         plugins: {
-            '@react-hooks': pluginHooks,
+            '@react-hooks': pluginHooks as ESLint.Plugin,
         },
         rules: {
             ...prefixKey(pluginHooks.configs['recommended'].rules, '@'),
